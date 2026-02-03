@@ -1,1 +1,22 @@
-# AI-Virtual-Painter
+AI Virtual Painter
+An innovative application merging computer vision and hand tracking. Designed for interactive digital art, it employs OpenCV and MediaPipe, and easy distribution via PyInstaller.
+
+Tech Stack
+OpenCV: Image Processing and Drawing
+
+MediaPipe: Hand Tracking
+
+PyInstaller: Distribution
+
+Installation
+MediaPipe
+
+pip install mediapipe
+OpenCV
+
+pip install opencv-python
+To create exe
+
+pip install -U pyinstaller
+
+pyinstaller --onefile --windowed --collect-data mediapipe  --add-data "header/*;header/" --add-data "handtrackingmodule.py;." painter.py
